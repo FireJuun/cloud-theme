@@ -10,6 +10,13 @@ tags = []
 features = []
 min_version = "0.41.0"
 
+# If the theme has a single author
 [author]
-name = "Chris Reddington (original)"
+name = "John Manning"
+homepage = "https://mayjuun.com"
+
+# If porting an existing theme
+[original]
+author = "Chris Reddington"
 homepage = "https://www.cloudwithchris.com"
+repo = "https://github.com/chrisreddington/cloudwithchris.com"
