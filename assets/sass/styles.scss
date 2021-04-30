@@ -18,10 +18,11 @@ footer {
 
 footer a {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 footer a:hover {
-  color: #FFFFFF;
+  color: $accent-color;
 }
 
 .flex {
@@ -49,6 +50,10 @@ footer a:hover {
 
 .episode-card-img {}
 
+h3 {
+  text-align: center;
+}
+
 .bg-main {
   background-color: $main-blue;
   flex: 1;
@@ -64,7 +69,7 @@ footer a:hover {
 }
 
 main a {
-  color: $cloud-with-chris-blue;
+  color: $accent-color;
   text-decoration: none;
 }
 

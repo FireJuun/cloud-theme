@@ -11,8 +11,23 @@
 {{ end }}
 
 {{ define "top" }}
+
+  <section class="py-5 container" align="center">
+    <div class="col">
+      <div class="row">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/host">Hosts</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
   <div class="container" align="center">
     <img src="{{ .Params.image | absURL}}" width="150" class="rounded-circle z-depth-2" alt="{{ .Title }}" title="{{ .Title }}" />
+    <h3 class="card-title">{{ .Title }}</h3>
     <p>
       {{ with .Params.Github }}
         <a href="https://github.com/{{ . }}" aria-label="GitHub"><button type="button" aria-label="GitHub" class="btn btn-social btn-github btn-rounded"><i class="fab fa-github"></i></button></a>

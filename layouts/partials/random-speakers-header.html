@@ -1,0 +1,8 @@
+<div class="row">
+    {{ range first 12 (shuffle (where $.Site.RegularPages "Section" "host")) }}
+      <div class="col-6">
+        <a href="{{ .Permalink }}"><img src="{{ .Params.image | absURL }}" class="rounded-circle z-depth-2 align-middle" width="125" title="{{ .Title }}" alt="{{ .Title }}" /></a>
+        <a href="{{ .Permalink }}"><h3 class="card-title">{{ .Title }}</h3></a>
+      </div>
+    {{ end }}
+  </div>

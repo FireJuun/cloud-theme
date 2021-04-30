@@ -14,9 +14,9 @@
                 {{ partial "helper/navigation-menu.html" (dict "context" . "currentPage" $currentPage) }}
               {{ end }}              
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Series
-              </a>
+              </a> -->
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">                
                 {{ range $name, $taxonomy := .Site.Taxonomies.series }}
                   {{ with site.GetPage (printf "/%s" ($name | urlize )) -}} 
@@ -50,6 +50,6 @@
       {{ with .Site.Params.Social.YouTube }}     
         <a href="https://www.youtube.com/c/{{ . }}"><button type="button" aria-label="YouTube" class="btn btn-social btn-youtube btn-rounded"><i class="fab fa-youtube"></i></button></a>
       {{ end }}
-      <a href="{{ "/blog/index.xml" | absURL }}"><button type="button" aria-label="Blog RSS feed" class="btn btn-social btn-rss btn-rounded"><i class="fas fa-blog"></i></button></a>
+      <!-- <a href="{{ "/blog/index.xml" | absURL }}"><button type="button" aria-label="Blog RSS feed" class="btn btn-social btn-rss btn-rounded"><i class="fas fa-blog"></i></button></a> -->
   </div>
 </header>
