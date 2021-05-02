@@ -7,8 +7,12 @@ blockquote {
   padding: ($spacer / 2) $spacer ($spacer / 100);
   margin-bottom: $spacer;
   font-size: $blockquote-font-size;
-  border-left: $blockquote-border-width solid $cloud-with-chris-blue;
-  background-color: white;
+  border-left: $blockquote-border-width solid $primary-color;
+  background-color: $bg-secondary;
+}
+
+body {
+  background-color: $bg-secondary;
 }
 
 footer {
@@ -35,12 +39,12 @@ footer a:hover {
 }
 
 .bg-cwc {
-  background-color: $cloud-with-chris-blue;
+  background-color: $primary-color;
 }
 
 .header-area {
   text-align: center;
-  color: white;
+  color: $text-grey;
   padding-bottom: 10px;
 }
 
@@ -55,7 +59,7 @@ h3 {
 }
 
 .bg-main {
-  background-color: $main-blue;
+  background-color: $bg-main;
   flex: 1;
   padding-top: 5px;
 }
@@ -113,7 +117,7 @@ main a:hover {
   padding: .75rem 1rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: $cloud-with-chris-blue;
+  color: $primary-color;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -134,8 +138,8 @@ main a:hover {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: $cloud-with-chris-blue;
-  border-color: $cloud-with-chris-blue;
+  background-color: $primary-color;
+  border-color: $primary-color;
 }
 
 .youtube {
@@ -451,10 +455,10 @@ main a:hover {
 }
 
 .btn-nav {
-  color: $main-blue;
+  color: $bg-main;
 }
 
 .btn-nav:hover {
-  background-color: $main-blue;
-  color: $cloud-with-chris-blue;
+  background-color: $bg-main;
+  color: $primary-color;
 }
