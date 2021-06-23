@@ -6,7 +6,7 @@
 <meta name="application-name" content="{{ .Title | default .Site.Title }}{{ if not .IsHome }} | {{ .Site.Title }}{{ end }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 
-<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.google-analytics.com https://www.youtube.com 'sha256-FJHz+tuWzMfff02U9Qb0igMfyVORBt4k3YAY5Z6ilgY=' 'sha256-1CfYbUbDQSoUKS2uxzsF5X4poiM0VN/82KjKyg9DTbA=' 'sha256-gYueBM/gtb1yab8LWXOJXAFOaiXTDmfHIOqZGqwo49M='; img-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://s.ytimg.com https://app.podscribe.ai https://is5-ssl.mzstatic.com; connect-src 'self' https://backend.podscribe.ai https://podcasts.codeembers.com https://www.google-analytics.com https://stats.g.doubleclick.net; child-src https://www.youtube.com; object-src none">
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.google-analytics.com https://www.youtube.com 'sha256-eupSTZDhyn64qvulh51zHD3tjkMuXwQ7Xbl0Ia8WBmc=' 'sha256-FJHz+tuWzMfff02U9Qb0igMfyVORBt4k3YAY5Z6ilgY=' 'sha256-1CfYbUbDQSoUKS2uxzsF5X4poiM0VN/82KjKyg9DTbA=' 'sha256-gYueBM/gtb1yab8LWXOJXAFOaiXTDmfHIOqZGqwo49M='; img-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net https://s.ytimg.com https://app.podscribe.ai https://is5-ssl.mzstatic.com; connect-src 'self' https://backend.podscribe.ai https://podcasts.codeembers.com https://www.google-analytics.com https://stats.g.doubleclick.net; child-src https://www.youtube.com; object-src none">
 
 {{ if not .Params.Description }}
   <meta name="description" content="{{ .Site.Params.description }}" />
