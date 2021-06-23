@@ -143,10 +143,17 @@ main a:hover {
 }
 
 .youtube {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  min-height: 40vh;
-  max-height: 50vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 75vw;
+  height: calc(75vw/1.77);
+}
+
+@media (min-width: 900px) {
+  .youtube {
+    width: 60vw;
+    height: calc(60vw/1.77); 
+  }
 }
 
 // Icons
