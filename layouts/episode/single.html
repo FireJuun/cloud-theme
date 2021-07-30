@@ -6,7 +6,7 @@
 
   {{ with .Params.podcast_file }}
     <div id="podscribe-embed-root"></div>
-    <script cookie-consent="strictly-necessary">
+    <script>
       var podscribeEmbedVars = {
         epGuid: 'https://podcasts.codeembers.com/podcast_audio/{{ . }}',
         rssUrl: 'https://www.codeembers.com/episode/index.xml',
