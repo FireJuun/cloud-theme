@@ -5,22 +5,17 @@
   <div class="dropdown-divider"></div>
 
   {{ with .Params.podcast_file }}
-    <div id="podscribe-embed-root"></div>
-    <script cookie-consent="strictly-necessary">
-      var podscribeEmbedVars = {
-        epGuid: 'https://podcasts.codeembers.com/podcast_audio/{{ . }}',
-        rssUrl: 'https://www.codeembers.com/episode/index.xml',
-        backgroundColor: '#CFDCE1',
-        font: undefined,
-        fontColor: undefined,
-        speakerFontColor: '#25A6D9',
-        height: '1000px',
-        showEditButton: true,
-        showSpeakers: true,
-        showTimestamps: true
-      };
-    </script>
-    <script cookie-consent="tracking" src="{{ "js/embed.js" | absURL }}"></script>
+    <!-- <div id="podscribe-embed-root"></div>
+    <script type="application/json" data-cwc-selector="episode-data">
+      {
+        "epGuid": "https://podcasts.codeembers.com/podcast_audio/{{ . }}",
+      }
+      </script>
+      <script src="{{ "js/podscribe.js" | absURL }}" cookie-consent="strictly-necessary"></script>
+    <script cookie-consent="tracking" src="{{ "js/embed.js" | absURL }}"></script> -->
+
+    <div id="podscribe-embed-root"></div> <script> var podscribeEmbedVars = { epGuid: 'https://podcasts.codeembers.com/podcast_audio/01-KoiPonds.mp3', rssUrl: 'https://codeembers.com/episode/index.xml', backgroundColor: 'white', height: '600px', showSpeakers: true }; </script> <script src="https://app.podscribe.ai/static/js/embed.js"></script>
+
   {{ end }}
 </div>
 {{ end }}
